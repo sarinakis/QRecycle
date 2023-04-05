@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">QRecycle</string>
+    <string name="main_text_1">Let\'s recycle together!</string>
+    <string name="demoText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ligula rhoncus eros aliquam ultrices sit amet et ligula.</string>
+    <string name="mainBtnText">Start Now!</string>
+    <string name="mainSvgContentDescription">The World is mine!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="registerMsg">Welcome to QRecycle!</string>
+    <string name="registerBtnText">Register</string>
+    <string name="registerUnderBtnSignInText">Sign in</string>
+    <string name="registerUnderBtnQuestionText">Already signed in?</string>
+    <string name="fullNameText">Full Name</string>
+    <string name="emailText">Email</string>
+    <string name="passwordText">Password</string>
+    <string name="confirmPasswordText">Confirm Password</string>
 </resources>
