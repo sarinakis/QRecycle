@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/mainTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/lobster"
+        android:letterSpacing=".02"
+        android:text="@string/qrecycle"
+        android:textColor="@color/darkBlue"
+        android:textSize="50sp"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/undraw_the_world_is_mine_re_j5cr"
+        android:contentDescription="@string/mainSvgContentDescription" />
+
+    <TextView
+        android:id="@+id/subMainTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:letterSpacing=".08"
+        android:text="@string/main_text_1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/mainSubTv"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:letterSpacing=".03"
+        android:text="@string/sub_text_on_sign_activity"
+        android:textColor="@color/blackWithLowerOpacity"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_button_dark_blue_rounded"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:letterSpacing=".05"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lobster"
+        android:text="@string/sign_in_text_sign_activity"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_button_empty_background_rounded"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:letterSpacing=".05"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lobster"
+        android:text="@string/sign_up_text_sign_activity"
+        android:textColor="@color/darkBlue"
+        />
+
+
+</LinearLayout>

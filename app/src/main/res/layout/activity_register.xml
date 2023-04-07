@@ -4,58 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/backgroundColor"
-    tools:context=".RegisterActivity"
-    >
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/registerTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:paddingTop="20dp"
         android:fontFamily="@font/roboto_medium"
         android:letterSpacing=".08"
+        android:paddingTop="20dp"
         android:text="@string/registerMsg"
         android:textColor="@color/black"
         android:textSize="20sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center"
         android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
         android:paddingTop="40dp"
-        android:paddingBottom="60dp"
-        >
+        android:paddingBottom="60dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilName"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            >
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:imeOptions="actionGo"
-                android:hint="@string/fullNameText"
+                android:background="@drawable/shape_edit_text_rounded"
                 android:fontFamily="@font/lobster"
+                android:hint="@string/fullNameText"
+                android:imeOptions="actionGo"
                 android:inputType="textCapWords"
                 android:textColor="#363A43"
-                android:textColorHint="#7A8089"
-                />
+                android:textColorHint="#7A8089" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,19 +59,18 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            >
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:imeOptions="actionGo"
-                android:hint="@string/emailText"
+                android:background="@drawable/shape_edit_text_rounded"
                 android:fontFamily="@font/lobster"
+                android:hint="@string/emailText"
+                android:imeOptions="actionGo"
                 android:inputType="textCapWords"
                 android:textColor="#363A43"
                 android:textColorHint="#7A8089" />
@@ -88,23 +82,21 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            >
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:imeOptions="actionGo"
-                android:hint="@string/passwordText"
+                android:background="@drawable/shape_edit_text_rounded"
                 android:fontFamily="@font/lobster"
+                android:hint="@string/passwordText"
+                android:imeOptions="actionGo"
                 android:inputType="textCapWords"
                 android:textColor="#363A43"
-                android:textColorHint="#7A8089"
-                />
+                android:textColorHint="#7A8089" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,23 +105,21 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            >
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp">
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:imeOptions="actionGo"
-                android:hint="@string/confirmPasswordText"
+                android:background="@drawable/shape_edit_text_rounded"
                 android:fontFamily="@font/lobster"
+                android:hint="@string/confirmPasswordText"
+                android:imeOptions="actionGo"
                 android:inputType="textCapWords"
                 android:textColor="#363A43"
-                android:textColorHint="#7A8089"
-                />
+                android:textColorHint="#7A8089" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -139,51 +129,14 @@
         android:id="@+id/registerBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="30dp"
-        android:textSize="22sp"
-        android:letterSpacing=".05"
-        android:textAllCaps="false"
         android:fontFamily="@font/lobster"
+        android:letterSpacing=".05"
         android:text="@string/registerBtnText"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:layout_marginTop="5dp"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/registerUnderBtnQuestionText"
-            android:gravity="center"
-            android:fontFamily="@font/roboto_medium"
-            android:letterSpacing=".08"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            />
-
-        <TextView
-            android:id="@+id/signInTv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:text="@string/registerUnderBtnSignInText"
-            android:gravity="center"
-            android:fontFamily="@font/roboto_medium"
-            android:letterSpacing=".08"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/darkBlue"
-            android:clickable="true"
-            />
-
-    </LinearLayout>
+        android:textSize="22sp" />
 
 </LinearLayout>

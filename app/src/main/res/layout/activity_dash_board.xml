@@ -4,21 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
-    android:gravity="center"
     android:orientation="vertical"
-    android:theme="@style/Theme.QRecycle.NoActionBar"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    tools:context=".DashBoardActivity">
 
     <TextView
-        android:id="@+id/mainTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lobster"
-        android:gravity="center"
-        android:letterSpacing=".02"
-        android:text="@string/qrecycle"
-        android:textColor="@color/backgroundColor"
-        android:textSize="60sp" />
+        android:text="Welcome to the map"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
 
 </LinearLayout>

@@ -21,4 +21,8 @@
     <string name="emailText">Email</string>
     <string name="passwordText">Password</string>
     <string name="confirmPasswordText">Confirm Password</string>
+    <string name="qrecycle">QRecycle</string>
+    <string name="sub_text_on_sign_activity">With this application recycling becomes iteractive as well as fun from winning prizes!</string>
+    <string name="sign_up_text_sign_activity">Sign Up</string>
+    <string name="sign_in_text_sign_activity">Sign In</string>
 </resources>
