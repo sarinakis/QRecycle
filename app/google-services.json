@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1028883034323",
+    "firebase_url": "https://qrecycle-9c9e7-default-rtdb.firebaseio.com",
+    "project_id": "qrecycle-9c9e7",
+    "storage_bucket": "qrecycle-9c9e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1028883034323:android:56ac00252107d76eed2426",
+        "android_client_info": {
+          "package_name": "com.example.qrecycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1028883034323-kjkihui4fnuvbua988du6hv8rek90q5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfAx0ezM78Ipxwn3klFNd1CwvdrJWyKuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1028883034323-kjkihui4fnuvbua988du6hv8rek90q5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
