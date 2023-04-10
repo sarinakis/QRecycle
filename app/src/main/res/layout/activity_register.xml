@@ -4,139 +4,149 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_gradient"
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/registerTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/roboto_medium"
-        android:letterSpacing=".08"
-        android:paddingTop="20dp"
-        android:text="@string/registerMsg"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="40dp"
-        android:paddingBottom="60dp">
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/registerMsg"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilName"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/etName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_edit_text_rounded"
-                android:fontFamily="@font/lobster"
-                android:hint="@string/fullNameText"
-                android:imeOptions="actionGo"
-                android:inputType="textCapWords"
-                android:textColor="#363A43"
-                android:textColorHint="#7A8089" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilEmail"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/etEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_edit_text_rounded"
-                android:fontFamily="@font/lobster"
-                android:hint="@string/emailText"
-                android:imeOptions="actionGo"
-                android:inputType="textCapWords"
-                android:textColor="#363A43"
-                android:textColorHint="#7A8089" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilPassword"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/etPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_edit_text_rounded"
-                android:fontFamily="@font/lobster"
-                android:hint="@string/passwordText"
-                android:imeOptions="actionGo"
-                android:inputType="textCapWords"
-                android:textColor="#363A43"
-                android:textColorHint="#7A8089" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tilConfirmPassword"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="30dp">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/etConfirmPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/shape_edit_text_rounded"
-                android:fontFamily="@font/lobster"
-                android:hint="@string/confirmPasswordText"
-                android:imeOptions="actionGo"
-                android:inputType="textCapWords"
-                android:textColor="#363A43"
-                android:textColorHint="#7A8089" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/registerBtn"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="30dp"
-        android:fontFamily="@font/lobster"
-        android:letterSpacing=".05"
-        android:text="@string/registerBtnText"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="22sp" />
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/backgroundColor"
+        app:cardCornerRadius="25dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/fullNameText"
+                app:endIconMode="clear_text"
+                android:textColorHint="@color/blackWithLowerOpacity"
+                app:boxBackgroundMode="none">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edit_text_rounded"
+                    android:gravity="start"
+                    android:inputType="textCapWords"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/emailText"
+                app:endIconMode="clear_text"
+                android:textColorHint="@color/blackWithLowerOpacity"
+                app:boxBackgroundMode="none" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edit_text_rounded"
+                    android:gravity="start"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="@string/passwordText"
+                app:endIconMode="password_toggle"
+                android:textColorHint="@color/blackWithLowerOpacity"
+                app:boxBackgroundMode="none" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edit_text_rounded"
+                    android:gravity="start"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/confirmPasswordText"
+                app:endIconMode="password_toggle"
+                android:textColorHint="@color/blackWithLowerOpacity"
+                app:boxBackgroundMode="none" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/shape_edit_text_rounded"
+                    android:gravity="start"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/shape_button_dark_blue_rounded"
+                android:fontFamily="@font/lobster"
+                android:letterSpacing=".05"
+                android:textSize="22sp"
+                android:text="@string/registerBtnText"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
