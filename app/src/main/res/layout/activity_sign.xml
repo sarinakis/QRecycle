@@ -70,7 +70,7 @@
         android:letterSpacing=".05"
         android:textAllCaps="false"
         android:fontFamily="@font/lobster"
-        android:text="@string/sign_in_text_sign_activity"
+        android:text="@string/sign_up_text_sign_activity"
         android:textColor="@color/white"
         />
 
@@ -87,7 +87,7 @@
         android:letterSpacing=".05"
         android:textAllCaps="false"
         android:fontFamily="@font/lobster"
-        android:text="@string/sign_up_text_sign_activity"
+        android:text="@string/sign_in_text_sign_activity"
         android:textColor="@color/darkBlue"
         />
 
