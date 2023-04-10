@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.Button
-import androidx.appcompat.widget.AppCompatEditText
-
 class SignActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,9 +22,9 @@ class SignActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
-//        sinUnBtn.setOnClickListener {
-//            startActivity(Intent(this, LogInActivity::class.java))
-//        }
+        sinUnBtn.setOnClickListener {
+            startActivity(Intent(this, LogInActivity::class.java))
+        }
 
     }
 

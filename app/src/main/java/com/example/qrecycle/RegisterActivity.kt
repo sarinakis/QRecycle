@@ -60,7 +60,9 @@ class RegisterActivity : AppCompatActivity() {
                 object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     if (snapshot.exists()) {
-                        startLogInActivity()
+                        val intent = Intent(this@RegisterActivity, LogInActivity::class.java)
+                        intent.putExtra("email", emailStr)
+                        startActivity(intent)
                         Toast.makeText(
                             this@RegisterActivity,
                             "Email already registered",
@@ -107,11 +109,6 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun startDashboardActivity() {
         val intent = Intent(this, DashBoardActivity::class.java)
-        startActivity(intent)
-    }
-
-    private fun startLogInActivity() {
-        val intent = Intent(this, LogInActivity::class.java)
         startActivity(intent)
     }
 

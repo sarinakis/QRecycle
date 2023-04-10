@@ -25,4 +25,6 @@
     <string name="sub_text_on_sign_activity">With this application recycling becomes iteractive as well as fun from winning prizes!</string>
     <string name="sign_up_text_sign_activity">Sign Up</string>
     <string name="sign_in_text_sign_activity">Sign In</string>
+    <string name="text_view_log_in">Welcome back to QRecycle</string>
+    <string name="log_in_btn_text">Log In</string>
 </resources>
