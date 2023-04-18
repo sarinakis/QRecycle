@@ -31,12 +31,11 @@ class RegisterActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         usersRef = database.reference.child("users")
 
-        val registerBtn : Button= findViewById(R.id.registerBtn)
-
-        val fullNameInput        : TextInputLayout = findViewById(R.id.editTextFullName)
-        val emailInput           : TextInputLayout = findViewById(R.id.editTextEmail)
-        val passwordInput        : TextInputLayout = findViewById(R.id.editTextPassword)
-        val confirmPasswordInput : TextInputLayout = findViewById(R.id.editTextConfirmPassword)
+        val registerBtn          = findViewById<Button>(R.id.registerBtn)
+        val fullNameInput        = findViewById<TextInputLayout>(R.id.editTextFullName)
+        val emailInput           = findViewById<TextInputLayout>(R.id.editTextEmail)
+        val passwordInput        = findViewById<TextInputLayout>(R.id.editTextPassword)
+        val confirmPasswordInput = findViewById<TextInputLayout>(R.id.editTextConfirmPassword)
 
         registerBtn.setOnClickListener {
             registerUser(fullNameInput, emailInput, passwordInput, confirmPasswordInput)
@@ -108,8 +107,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun startDashboardActivity() {
-        val intent = Intent(this, DashBoardActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, DashBoardActivity::class.java))
     }
 
     private fun validateForm(name : String, email : String, password : String, confirmPassword : String) : Boolean{

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/background_gradient">
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/darkBlue"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_person_24" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profileFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/backgroundColor"
+            android:hint="Full Name"
+            android:textColorHint="@color/backgroundColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/backgroundColor">
+
+        <TextView
+            android:id="@+id/profileEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/shape_edit_text_rounded"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Email: g.sarinakis@gmail.com"
+            android:textColorHint="@color/blackWithLowerOpacity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/shape_edit_text_rounded"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Points: 2.000"
+            android:textColorHint="@color/blackWithLowerOpacity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/shape_edit_text_rounded"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Leaderboard place: 3"
+            android:textColorHint="@color/blackWithLowerOpacity" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="60dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/shape_edit_text_rounded"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Your Quests"
+            android:textColorHint="@color/blackWithLowerOpacity" />
+
+        <TextView
+            android:id="@+id/editYourProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Edit your profile"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

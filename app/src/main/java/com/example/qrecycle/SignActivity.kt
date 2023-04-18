@@ -15,8 +15,8 @@ class SignActivity : AppCompatActivity() {
         )
         setContentView(R.layout.activity_sign)
 
-        val sinInBtn : Button = findViewById(R.id.signInBtn)
-        val sinUnBtn : Button = findViewById(R.id.signUpBtn)
+        val sinInBtn = findViewById<Button>(R.id.signInBtn)
+        val sinUnBtn = findViewById<Button>(R.id.signUpBtn)
 
         sinInBtn.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))

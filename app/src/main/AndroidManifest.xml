@@ -2,19 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"/>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/icon_design_two"
+        android:icon="@mipmap/launch_icon_2"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.QRecycle"
+        android:theme="@style/Theme.QRecycle.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.QRecycle.NoActionBar" />
         <activity
             android:name=".LogInActivity"
             android:exported="false"
-            android:theme="@style/Theme.QRecycle.NoActionBar"/>
+            android:theme="@style/Theme.QRecycle.NoActionBar" />
         <activity
             android:name=".DashBoardActivity"
             android:exported="false"

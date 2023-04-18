@@ -1,6 +1,5 @@
 package com.example.qrecycle
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,8 +13,8 @@ import com.google.firebase.database.*
 
 class LogInActivity : AppCompatActivity() {
 
-    private lateinit var database: FirebaseDatabase
-    private lateinit var usersRef: DatabaseReference
+    private lateinit var database : FirebaseDatabase
+    private lateinit var usersRef : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,19 +31,19 @@ class LogInActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         usersRef = database.reference.child("users")
 
-        val loginBtn: Button = findViewById(R.id.loginBtn)
-
-        val emailInput: TextInputLayout = findViewById(R.id.editTextEmail)
-        val passwordInput: TextInputLayout = findViewById(R.id.editTextPassword)
+        val loginBtn      = findViewById<Button>(R.id.loginBtn)
+        val emailInput    = findViewById<TextInputLayout>(R.id.editTextEmail)
+        val passwordInput = findViewById<TextInputLayout>(R.id.editTextPassword)
 
         val intent = intent
         val email = intent.getStringExtra("email")
+
         if (!email.isNullOrEmpty()) {
             emailInput.editText?.setText(email)
         }
 
         loginBtn.setOnClickListener {
-            val emailStr = emailInput.editText?.text.toString().trim { it <= ' ' }
+            val emailStr    = emailInput.editText?.text.toString().trim { it <= ' ' }
             val passwordStr = passwordInput.editText?.text.toString().trim { it <= ' ' }
 
             if (validateForm(emailStr, passwordStr)) {
@@ -56,11 +55,6 @@ class LogInActivity : AppCompatActivity() {
                             for (userSnapshot in snapshot.children) {
                                 val user = userSnapshot.getValue(User::class.java)
                                 if (user != null && user.password == passwordStr) {
-                                    Toast.makeText(
-                                        this@LogInActivity,
-                                        "Logged in successfully",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
                                     startDashboardActivity()
                                     finish()
                                     return
@@ -73,7 +67,6 @@ class LogInActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-
                     override fun onCancelled(error: DatabaseError) {
                         Toast.makeText(
                             this@LogInActivity,
@@ -87,8 +80,7 @@ class LogInActivity : AppCompatActivity() {
     }
 
     private fun startDashboardActivity() {
-        val intent = Intent(this, DashBoardActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, DashBoardActivity::class.java))
     }
 
     private fun validateForm(email: String, password: String): Boolean {
