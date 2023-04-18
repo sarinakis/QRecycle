@@ -27,4 +27,7 @@
     <string name="sign_in_text_sign_activity">Sign In</string>
     <string name="text_view_log_in">Welcome back to QRecycle</string>
     <string name="log_in_btn_text">Log In</string>
+    <string name="your_quests_profile">Your Quests</string>
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="leaderboard_profile_text">Leaderboard</string>
 </resources>
