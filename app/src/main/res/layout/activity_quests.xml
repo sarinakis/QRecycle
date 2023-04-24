@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_gradient"
+    tools:context=".QuestsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Quests"
+        android:fontFamily="@font/lobster"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/backgroundColor"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Daily Quests"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/recyclePlasticrQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Recycle plastic   80 points"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/recyclePaperQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Recycle paper   100 points"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/recycleGlassQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Recycle glass   150 points"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/recycleElectronicsQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Recycle electronics   200 points"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/backgroundColor"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Monthly Quests"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/collectCapsQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Collect caps 500 points"
+                android:clickable="true" />
+
+            <TextView
+                android:id="@+id/collectGarbageQuest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/shape_edit_text_rounded"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Collect garbage 800 points"
+                android:clickable="true" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

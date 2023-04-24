@@ -24,16 +24,15 @@ class LogInActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
-
         setContentView(R.layout.activity_log_in)
 
         FirebaseApp.initializeApp(this)
         database = FirebaseDatabase.getInstance()
         usersRef = database.reference.child("users")
 
-        val loginBtn      = findViewById<Button>(R.id.loginBtn)
-        val emailInput    = findViewById<TextInputLayout>(R.id.editTextEmail)
-        val passwordInput = findViewById<TextInputLayout>(R.id.editTextPassword)
+        val loginBtn           = findViewById<Button>(R.id.loginBtn)
+        val emailInput         = findViewById<TextInputLayout>(R.id.editTextEmail)
+        val passwordInput      = findViewById<TextInputLayout>(R.id.editTextPassword)
 
         val intent = intent
         val email = intent.getStringExtra("email")

@@ -16,8 +16,6 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var database: FirebaseDatabase
     private lateinit var usersRef: DatabaseReference
-
-    //TODO: Add Google, Facebook and Instagram log in options
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         @Suppress("DEPRECATION")
@@ -43,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun registerUser(
-        name: TextInputLayout,
+        name : TextInputLayout,
         email : TextInputLayout,
         password : TextInputLayout,
         confirmPassword : TextInputLayout
@@ -70,17 +68,12 @@ class RegisterActivity : AppCompatActivity() {
                         finish()
                     } else {
                         val id = ref.push().key
-                        val user = User(id, nameStr, emailStr, passwordStr)
+                        val user = User(id, nameStr, emailStr, passwordStr, 0, true)
 
                         if (id != null) {
                             ref.child(id)
                                 .setValue(user)
                                 .addOnSuccessListener {
-                                    Toast.makeText(
-                                        this@RegisterActivity,
-                                        "You have successfully registered to QRecycle",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
                                     startDashboardActivity()
                                     finish()
                                 }

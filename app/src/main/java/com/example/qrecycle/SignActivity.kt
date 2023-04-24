@@ -16,13 +16,13 @@ class SignActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign)
 
         val sinInBtn = findViewById<Button>(R.id.signInBtn)
-        val sinUnBtn = findViewById<Button>(R.id.signUpBtn)
+        val sinUpBtn = findViewById<Button>(R.id.signUpBtn)
 
         sinInBtn.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
-        sinUnBtn.setOnClickListener {
+        sinUpBtn.setOnClickListener {
             startActivity(Intent(this, LogInActivity::class.java))
         }
 

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor"
+    tools:context=".LeaderboardActivity">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:textSize="40sp"
+    android:textColor="@color/darkBlue"
+    android:text="Leaderboard"
+    android:fontFamily="@font/lobster"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@color/darkBlue"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="1.  Sarinakis Giwrgos 200 points"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="2.  Gkanatsios Argyris 150 points"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="3.  Liveris Spyros 100 points"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="4.  Mwraitis Giwrgos 80 points"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="5.  Patsikas Giwrgos 0 points"
+                android:fontFamily="@font/roboto_medium"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -20,13 +20,15 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_margin="20dp"
+            android:padding="8dp"
             android:orientation="vertical"
             android:gravity="center"
             android:background="@color/darkBlue"
-            android:padding="8dp"
-            android:clickable="true" >
+            android:clickable="true"
+            android:contentDescription="@string/profile_picture_description_text">
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImageView"
                 android:layout_width="115dp"
                 android:layout_height="115dp"
                 android:layout_gravity="center"
@@ -40,9 +42,8 @@
             android:gravity="center"
             android:layout_marginBottom="20dp"
             android:textSize="22sp"
-            android:textColor="@color/backgroundColor"
-            android:hint="Full Name"
-            android:textColorHint="@color/backgroundColor" />
+            android:textColor="@color/white"
+            android:text="@string/profile_name" />
     </LinearLayout>
 
     <LinearLayout
@@ -65,10 +66,10 @@
             android:background="@drawable/shape_edit_text_rounded"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:hint="Email: g.sarinakis@gmail.com"
-            android:textColorHint="@color/blackWithLowerOpacity" />
+            android:text="@string/profile_email" />
 
         <TextView
+            android:id="@+id/profilePoints"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -79,11 +80,10 @@
             android:background="@drawable/shape_edit_text_rounded"
             android:textSize="20sp"
             android:textColor="@color/black"
-            android:hint="Points: 2.000"
-            android:textColorHint="@color/blackWithLowerOpacity" />
+            android:text="@string/profile_points" />
 
         <TextView
-            android:id="@+id/leaderboardClickableTv"
+            android:id="@+id/leaderboardTv"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -98,6 +98,7 @@
             android:clickable="true" />
 
         <TextView
+            android:id="@+id/questsTv"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"

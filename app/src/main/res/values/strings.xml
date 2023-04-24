@@ -27,7 +27,12 @@
     <string name="sign_in_text_sign_activity">Sign In</string>
     <string name="text_view_log_in">Welcome back to QRecycle</string>
     <string name="log_in_btn_text">Log In</string>
-    <string name="your_quests_profile">Your Quests</string>
+    <string name="your_quests_profile">Quests</string>
     <string name="edit_your_profile">Edit your profile</string>
     <string name="leaderboard_profile_text">Leaderboard</string>
+    <string name="profile_picture_description_text">Profile picture</string>
+    <string name="profile_email"> Email: %1$s </string>
+    <string name="profile_points"> Points: %1$s </string>
+    <string name="profile_name"> %1$s </string>
+    <string name="remember_me_btn">Remember me</string>
 </resources>

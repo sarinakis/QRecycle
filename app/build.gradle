@@ -48,10 +48,18 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    // Firebase implementations:
+    // Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:31.5.0')
-    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    // Firebase Firestore
     implementation 'com.google.firebase:firebase-firestore-ktx:24.5.0'
-    implementation 'com.google.firebase:firebase-auth-ktx:21.3.0'
+    // Firebase Real-Time Database
     implementation 'com.google.firebase:firebase-database-ktx:20.2.0'
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:21.3.0'
+    // Google Sign-In
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    // Facebook Login
+    implementation 'com.facebook.android:facebook-login:12.1.0'
+    //Profile Image:
+
 }
