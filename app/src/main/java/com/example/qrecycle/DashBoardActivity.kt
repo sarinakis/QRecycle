@@ -3,21 +3,15 @@
 package com.example.qrecycle
 
 import android.Manifest
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.location.Location
-import android.location.LocationListener
-import android.location.LocationManager
 import android.os.Bundle
-import android.preference.PreferenceManager
 import android.view.WindowManager
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import org.osmdroid.config.Configuration
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
@@ -25,7 +19,9 @@ import org.osmdroid.views.MapView
 class DashBoardActivity : AppCompatActivity() {
 
     private val LOCATION_PERMISSION_REQUEST_CODE = 123
-    private val INITIAL_ZOOM_LEVEL = 14.0
+    private val INITIAL_ZOOM_LEVEL = 17.0
+    private val INITIAL_LATITUDE = 41.13971119802141
+    private val INITIAL_LONGITUDE = 24.887498812792536
     private lateinit var mapView: MapView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,6 +44,7 @@ class DashBoardActivity : AppCompatActivity() {
         mapView.setTileSource(TileSourceFactory.DEFAULT_TILE_SOURCE)
         mapView.controller.setZoom(INITIAL_ZOOM_LEVEL)
         mapView.setMultiTouchControls(true)
+        mapView.setBuiltInZoomControls(false)
 
         // Request location permission
         requestLocationPermission()
@@ -64,39 +61,14 @@ class DashBoardActivity : AppCompatActivity() {
                 LOCATION_PERMISSION_REQUEST_CODE
             )
         } else {
-            // Permission already granted, start retrieving location
-            retrieveLocation()
+            // Permission already granted, center the map on the initial location
+            centerMapOnLocation()
         }
     }
-
-    private fun retrieveLocation() {
-        val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-
-        val locationListener = object : LocationListener {
-            override fun onLocationChanged(location: Location) {
-                val userLatitude = location.latitude
-                val userLongitude = location.longitude
-
-                // Center the map on the user's location
-                val userLocation = GeoPoint(userLatitude, userLongitude)
-                mapView.controller.setCenter(userLocation)
-            }
-
-            @Deprecated("Deprecated in Java")
-            override fun onStatusChanged(provider: String?, status: Int, extras: Bundle?) {}
-            override fun onProviderEnabled(provider: String) {}
-            override fun onProviderDisabled(provider: String) {}
-        }
-
-        if (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) == PackageManager.PERMISSION_GRANTED
-        ) {
-            locationManager.requestSingleUpdate(LocationManager.NETWORK_PROVIDER, locationListener, null)
-        }
+    private fun centerMapOnLocation() {
+        val initialLocation = GeoPoint(INITIAL_LATITUDE, INITIAL_LONGITUDE)
+        mapView.controller.setCenter(initialLocation)
     }
-
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
@@ -106,14 +78,15 @@ class DashBoardActivity : AppCompatActivity() {
         if (requestCode == LOCATION_PERMISSION_REQUEST_CODE && grantResults.isNotEmpty() &&
             grantResults[0] == PackageManager.PERMISSION_GRANTED
         ) {
-            // Location permission granted
-            retrieveLocation()
+            // Location permission granted, center the map on the initial location
+            centerMapOnLocation()
         } else {
             Toast.makeText(
                 this@DashBoardActivity,
-                "Location access denied",
+                "Location permission denied",
                 Toast.LENGTH_SHORT
             ).show()
+            finish()
         }
     }
 }

@@ -128,14 +128,6 @@
                     tools:ignore="SpeakableTextPresentCheck,VisualLintTextFieldSize" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-
-            </LinearLayout>
-
             <Button
                 android:id="@+id/registerBtn"
                 android:layout_width="match_parent"

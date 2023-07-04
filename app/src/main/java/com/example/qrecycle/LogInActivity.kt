@@ -80,6 +80,7 @@ class LogInActivity : AppCompatActivity() {
 
     private fun startDashboardActivity() {
         startActivity(Intent(this, DashBoardActivity::class.java))
+        finish()
     }
 
     private fun validateForm(email: String, password: String): Boolean {
