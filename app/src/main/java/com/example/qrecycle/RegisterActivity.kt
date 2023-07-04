@@ -30,13 +30,13 @@ class RegisterActivity : AppCompatActivity() {
         usersRef = database.reference.child("users")
 
         val registerBtn          = findViewById<Button>(R.id.registerBtn)
-        val fullNameInput        = findViewById<TextInputLayout>(R.id.editTextFullName)
+        val userNameInput        = findViewById<TextInputLayout>(R.id.editTextFullName)
         val emailInput           = findViewById<TextInputLayout>(R.id.editTextEmail)
         val passwordInput        = findViewById<TextInputLayout>(R.id.editTextPassword)
         val confirmPasswordInput = findViewById<TextInputLayout>(R.id.editTextConfirmPassword)
 
         registerBtn.setOnClickListener {
-            registerUser(fullNameInput, emailInput, passwordInput, confirmPasswordInput)
+            registerUser(userNameInput, emailInput, passwordInput, confirmPasswordInput)
         }
     }
 

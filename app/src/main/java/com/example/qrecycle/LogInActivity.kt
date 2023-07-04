@@ -31,8 +31,8 @@ class LogInActivity : AppCompatActivity() {
         usersRef = database.reference.child("users")
 
         val loginBtn           = findViewById<Button>(R.id.loginBtn)
-        val emailInput         = findViewById<TextInputLayout>(R.id.editTextEmail)
-        val passwordInput      = findViewById<TextInputLayout>(R.id.editTextPassword)
+        val emailInput   = findViewById<TextInputLayout>(R.id.editTextEmail)
+        val passwordInput= findViewById<TextInputLayout>(R.id.editTextPassword)
 
         val intent = intent
         val email = intent.getStringExtra("email")

@@ -12,6 +12,7 @@
     <color name="lightDarkBlue">#6096BA</color>
     <color name="darkBlue">#274C77</color>
     <color name="backgroundColor">#E7ECEF</color>
+    <color name="darkerBgColor">#8B8C89</color>
 
     <color name="blackWithLowerOpacity">#AA000000</color>
 </resources>

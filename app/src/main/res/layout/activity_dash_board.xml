@@ -7,6 +7,32 @@
     android:gravity="center"
     tools:context=".DashBoardActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/settingsBtn"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="158dp"
+            android:background="@drawable/bars_solid"
+            android:contentDescription="@string/setting_button_text" />
+
+        <ImageButton
+            android:id="@+id/profileBtn"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="158dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/profile_icon"
+            android:contentDescription="@string/profile_button_text" />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,11 +40,5 @@
         android:textSize="40sp"
         android:textColor="@color/black"
         android:text="DashBoardActivity"/>
-
-    <Button
-        android:id="@+id/profileBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile" />
 
 </LinearLayout>

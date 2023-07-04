@@ -17,7 +17,7 @@
     <string name="registerBtnText">Register</string>
     <string name="registerUnderBtnSignInText">Sign in</string>
     <string name="registerUnderBtnQuestionText">Already signed in?</string>
-    <string name="fullNameText">Full Name</string>
+    <string name="userNameText">Username</string>
     <string name="emailText">Email</string>
     <string name="passwordText">Password</string>
     <string name="confirmPasswordText">Confirm Password</string>
@@ -35,4 +35,6 @@
     <string name="profile_points"> Points: %1$s </string>
     <string name="profile_name"> %1$s </string>
     <string name="remember_me_btn">Remember me</string>
+    <string name="profile_button_text">profile button</string>
+    <string name="setting_button_text">setting button</string>
 </resources>

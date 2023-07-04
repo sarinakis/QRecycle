@@ -49,7 +49,7 @@ class ProfileActivity : AppCompatActivity() {
                         for (userSnapshot in snapshot.children) {
                             val user = userSnapshot.getValue(User::class.java)
                             if (user != null) {
-                                profileNameTv.text = getString(R.string.profile_name, user.name)
+                                profileNameTv.text = getString(R.string.profile_name, user.userName)
                                 profileEmailTv.text = getString(R.string.profile_email, user.email)
                                 profilePointsTv.text =
                                     getString(R.string.profile_points, user.points.toString())

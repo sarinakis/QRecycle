@@ -32,7 +32,7 @@
                 android:layout_width="115dp"
                 android:layout_height="115dp"
                 android:layout_gravity="center"
-                android:src="@drawable/baseline_person_24" />
+                android:src="@drawable/profile_icon" />
         </LinearLayout>
 
         <TextView

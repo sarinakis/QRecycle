@@ -6,18 +6,18 @@ import androidx.appcompat.graphics.drawable.DrawableWrapperCompat
 
 data class User(
     val id         : String? = null,
-    val name       : String,
+    val userName   : String,
     val email      : String,
     val password   : String,
     val points     : Int,
-    var isLoggedIn : Boolean = false,
-    var rememberMe : Boolean = false
+    var isLoggedIn : Boolean = false
 ) {
     constructor() : this(
         "",
         "",
         "",
         "",
-        0
+        0,
+        true
     )
 }
