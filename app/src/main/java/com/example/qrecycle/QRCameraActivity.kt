@@ -80,8 +80,7 @@ class QRCameraActivity : AppCompatActivity() {
 
         if (result != null && result.contents != null) {
             val qrContent: String = result.contents
-            // TODO: Process the scanned QR code content as needed
-            // You can store the value, display it, or perform any other action based on your requirements
+            // TODO: Na ginei xrisi tis qrContent gia tous pontous ston xristi
         }
         finish()
     }
