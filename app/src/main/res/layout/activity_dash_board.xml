@@ -19,15 +19,24 @@
             android:layout_width="30dp"
             android:layout_height="36dp"
             android:layout_marginStart="32dp"
-            android:layout_marginEnd="130dp"
+            android:layout_marginEnd="88dp"
             android:background="@drawable/bars_solid"
             android:contentDescription="@string/setting_button_text" />
+
+        <TextView
+            android:id="@+id/qrScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="@string/qr_scanner_text"/>
 
         <ImageButton
             android:id="@+id/profileBtn"
             android:layout_width="30dp"
             android:layout_height="36dp"
-            android:layout_marginStart="130dp"
+            android:layout_marginStart="88dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/profile_icon"
             android:contentDescription="@string/profile_button_text" />

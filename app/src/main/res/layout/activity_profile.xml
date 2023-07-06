@@ -11,21 +11,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:background="@drawable/background_gradient"
         android:gravity="center"
-        android:background="@drawable/background_gradient">
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/profilePicLayout"
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:layout_margin="20dp"
-            android:padding="8dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:background="@color/darkBlue"
             android:clickable="true"
-            android:contentDescription="@string/profile_picture_description_text">
+            android:contentDescription="@string/profile_picture_description_text"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/profileImageView"
@@ -39,11 +39,11 @@
             android:id="@+id/profileFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginBottom="20dp"
-            android:textSize="22sp"
+            android:gravity="center"
+            android:text="@string/profile_name"
             android:textColor="@color/white"
-            android:text="@string/profile_name" />
+            android:textSize="22sp" />
     </LinearLayout>
 
     <LinearLayout

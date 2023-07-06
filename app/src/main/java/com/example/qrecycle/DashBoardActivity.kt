@@ -8,6 +8,7 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.WindowManager
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -34,9 +35,14 @@ class DashBoardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dash_board)
 
         val profileBtn = findViewById<ImageButton>(R.id.profileBtn)
+        val qrScanner = findViewById<TextView>(R.id.qrScanner)
 
         profileBtn.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
+        qrScanner.setOnClickListener {
+            startActivity(Intent(this, QRCameraActivity::class.java))
         }
 
         // Initialize the map view

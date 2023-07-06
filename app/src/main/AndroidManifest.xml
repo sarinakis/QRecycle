@@ -73,6 +73,10 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.firebase.database.FirebaseDatabase"
+            android:value="https://qrecycle-9c9e7-default-rtdb.firebaseio.com/" />
     </application>
 
 </manifest>

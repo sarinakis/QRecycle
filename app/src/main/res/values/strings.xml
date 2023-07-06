@@ -31,10 +31,11 @@
     <string name="edit_your_profile">Edit your profile</string>
     <string name="leaderboard_profile_text">Leaderboard</string>
     <string name="profile_picture_description_text">Profile picture</string>
-    <string name="profile_email"> Email: %1$s </string>
-    <string name="profile_points"> Points: %1$s </string>
-    <string name="profile_name"> %1$s </string>
+    <string name="profile_name">%1$s</string>
+    <string name="profile_email">Email: %1$s</string>
+    <string name="profile_points">Points: %1$s</string>
     <string name="remember_me_btn">Remember me</string>
     <string name="profile_button_text">profile button</string>
     <string name="setting_button_text">setting button</string>
+    <string name="qr_scanner_text">QR Scanner</string>
 </resources>
